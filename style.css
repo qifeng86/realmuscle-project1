@@ -1,0 +1,125 @@
+Nav Bar Icon
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+} */
+
+/* .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+} */
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: .9s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* card styling */
+.card {
+
+    font-weight: bold;
+    font-size: larger;
+    overflow: hidden;
+    position:relative;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #eceff1;
+    padding: 0%;
+}
+
+.border{
+    padding: 5%;
+}
+
+.card-image{
+    
+}
+
+.card-content{
+    padding-top: 0px !important;
+    padding-bottom: 10px !important;
+    border: 10px;
+}
+
+.map-container{
+
+}
+
+/* input styling  */
+.input{
+    padding-top: 5px;
+}
+
+
+.rmv-btn{
+    align-items: center;
+}
+
+#alert{
+    text-emphasis: none;
+}
+
+
+/* Alert Styling */
+#toast-container {
+    top: auto !important;
+    right: auto !important;
+    bottom: 50%;
+  }

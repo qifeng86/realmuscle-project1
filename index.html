@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Font awesome css -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <title>Real Muscle</title>
+
+    <!-- Here.com map API JS -->
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4">
+            <div class="brand-logo center">Real Muscle</div>
+        </div>
+    </nav>
+
+
+    <!-- Main Body  -->
+    <!-- adress field -->
+    <div class="row input">
+        <div class="input-field col s10">
+            <input placeholder="Enter MLS ID" id="MLSID" type="text" class="validate">
+        </div>
+        <button href="javascript:void(0)" class="btn-floating btn-large waves-effect waves-light green" id="addButton"><i
+                class="material-icons">home</i></button>
+    </div>
+
+    <div id="Alert"></div>
+
+                <!-- cards -->
+    <div class="row">
+        <div class="col s6 border">
+            <div class="card" id="card1">
+                <div class="card-image materialboxed">
+                    <p id="propertyimage1"></p>
+                </div>
+                <div class="card-content">
+                    <p>Address: <span id="address1"></span></p>
+                    <p>Price: <span id="price1"></span></p>
+                    <p>Size: <span id="size1"></span></p>
+                    <p>Rooms: <span id="rooms1"></span></p>
+                    <p>Baths: <span id="baths1"></span></p>
+                </div>
+
+                    <!-- Map -->
+                <div class="map-container materialboxed" style="width: 300px; height: 300px" id="mapContainer1"></div>
+            </div>
+            
+                <!-- Remover btn -->
+            <div class="col s12 rmv-btn offset-s1"><a href="#" class="waves-effect red waves-light btn-large align-center" id="Removebutton1">Remove</a>
+            </div>
+        </div>
+
+        <div class="col s6 border">
+            <div class="card" id="card2">
+                <div class="card-image materialboxed">
+                    <p id="propertyimage2"></p>
+                </div>
+                <div class="card-content">
+                    <p>Address: <span id="address2"></span></p>
+                    <p>Price: <span id="price2"></span></p>
+                    <p>Size: <span id="size2"></span></p>
+                    <p>Rooms: <span id="rooms2"></span></p>
+                    <p>Baths: <span id="baths2"></span></p>
+
+                </div>
+                    <!-- Map -->
+                <div class="map-container materialboxed" style="width: 300px; height: 300px" id="mapContainer2"></div>
+                </div>
+                <!-- Remover btn -->
+            <div class="col s12 rmv-btn offset-s1"><a href="#" class="waves-effect red waves-light btn-large" id="Removebutton2">Remove</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <ul>
+                        <li>
+                            <h4 class="white-text">Developers:</h4>
+                        </li>
+                        <li>
+                            Qi Feng
+                        </li>
+                        <li>
+                            Jeff Woda
+                        </li>
+                        <li>
+                            Jalyn Campbell
+                        </li>
+                        <li>
+                            Eamon McHugh
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+<!-- js references -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./script/api.js"></script>
+<script src="./script/main.js"></script>
+
+<!-- Compiled and minified JavaScript from materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+<!-- Compiled and minified JavaScript from materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>
